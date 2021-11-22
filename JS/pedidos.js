@@ -1,8 +1,8 @@
-var UrlGetPedidos ='http://localhost:80/G6_20/controller/Pedidos.php?opciones=GetPedidos';
-var UrlPostPedidos = 'http://localhost:80/G6_20/controller/Pedidos.php?opciones=InsertPedidos';
-var UrlGetUno = 'http://localhost:80/G6_20/controller/Pedidos.php?opciones=GetUno';
-var UrlPutPedidos = 'http://localhost:80/G6_20/controller/Pedidos.php?opciones=UpdatePedidos';
-var UrlDeletePedidos = 'http://localhost:80/G6_20/controller/Pedidos.php?opciones=DeletePedidos';
+var UrlGetPedidos ='http://localhost:80/G6_20/Pedidos/controller/Pedidos.php?opciones=GetPedidos';
+var UrlPostPedidos = 'http://localhost:80/G6_20/Pedidos/controller/Pedidos.php?opciones=InsertPedidos';
+var UrlGetUno = 'http://localhost:80/G6_20/Pedidos/controller/Pedidos.php?opciones=GetUno';
+var UrlPutPedidos = 'http://localhost:80/G6_20/Pedidos/controller/Pedidos.php?opciones=UpdatePedidos';
+var UrlDeletePedidos = 'http://localhost:80/G6_20/Pedidos/controller/Pedidos.php?opciones=DeletePedidos';
 
 $(document).ready(function(){
     CargarPedidos();
@@ -19,17 +19,19 @@ function CargarPedidos(){
             
             for(i=0; i< MiItems.length; i++){
                 valores += '<tr>'+
-                '<td>'+MiItems[i].ID+'</td>'+
+                '<td class="table-info table-hover">'+MiItems[i].ID+'</td>'+
                 '<td>'+MiItems[i].ID_SOCIO+'</td>'+
-                '<td>'+MiItems[i].FECHA_PEDIDO+'</td>'+
+                '<td class="table-info">'+MiItems[i].FECHA_PEDIDO+'</td>'+
                 '<td>'+MiItems[i].DETALLE+'</td>'+
-                '<td>'+MiItems[i].SUB_TOTAL+'</td>'+
+                '<td class="table-info">'+MiItems[i].SUB_TOTAL+'</td>'+
                 '<td>'+MiItems[i].TOTAL_ISV+'</td>'+
-                '<td>'+MiItems[i].TOTAL+'</td>'+
+                '<td class="table-info">'+MiItems[i].TOTAL+'</td>'+
                 '<td>'+MiItems[i].FECHA_ENTREGA+'</td>'+
-                '<td>'+MiItems[i].ESTADO+'</td>'+
+                '<td class="table-info">'+MiItems[i].ESTADO+'</td>'+
                 '<td>'+
-                '<button class="btn btn-outline-warning" onclick="CargarPedido('+MiItems[i].ID+')">Editar</button>'+
+                '<button class="btn btn-outline-dark" onclick="CargarPedido('+MiItems[i].ID+')">Editar</button>'+
+                '</td>'+
+                '<td>'+
                 '<button class="btn btn-outline-danger" onclick="EliminarPedido('+MiItems[i].ID+')">Eliminar</button>'+
                 '</td>'+
             '</tr>';
