@@ -1,8 +1,8 @@
-var UrlGetSocios_Negocio = 'http://localhost:80/G6_20/Socios_Negocio/controller/socios_negocio.php?opciones=GETSocios_negocio';
-var UrlPostSocios_Negocio = 'http://localhost:80/G6_20/Socios_Negocio/controller/socios_negocio.php?opciones=InsertSocios_negocio';
-var UrlGetUno = 'http://localhost:80/G6_20/Socios_Negocio/controller/socios_negocio.php?opciones=GetUno';
-var UrlPutSocios_Negocio = 'http://localhost:80/G6_20/Socios_Negocio/controller/socios_negocio.php?opciones=ActualizarSocios_negocio';
-var UrlDeleteSocios_Negocio = 'http://localhost:80/G6_20/Socios_Negocio/controller/socios_negocio.php?opciones=EliminarSocios_negocio';
+var UrlGetSocios_Negocio = 'http://34.68.196.220:90/G6_20/Socios_Negocio/controller/socios_negocio.php?opciones=GETSocios_negocio';
+var UrlPostSocios_Negocio = 'http://34.68.196.220:90/G6_20/Socios_Negocio/controller/socios_negocio.php?opciones=InsertSocios_negocio';
+var UrlGetUno = 'http://34.68.196.220:90/G6_20/Socios_Negocio/controller/socios_negocio.php?opciones=GetUno';
+var UrlPutSocios_Negocio = 'http://34.68.196.220:90/G6_20/Socios_Negocio/controller/socios_negocio.php?opciones=ActualizarSocios_negocio';
+var UrlDeleteSocios_Negocio = 'http://34.68.196.220:90/G6_20/Socios_Negocio/controller/socios_negocio.php?opciones=EliminarSocios_negocio';
 
 $(document).ready(function(){
     CargarSociosNegocio();
