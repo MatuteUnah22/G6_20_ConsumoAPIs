@@ -3,7 +3,7 @@ var UrlPostSocios_Negocio = 'http://34.68.196.220:90/G6_20/Socios_Negocio/contro
 var UrlGetUno = 'http://34.68.196.220:90/G6_20/Socios_Negocio/controller/socios_negocio.php?opciones=GetUno';
 var UrlPutSocios_Negocio = 'http://34.68.196.220:90/G6_20/Socios_Negocio/controller/socios_negocio.php?opciones=ActualizarSocios_negocio';
 var UrlDeleteSocios_Negocio = 'http://34.68.196.220:90/G6_20/Socios_Negocio/controller/socios_negocio.php?opciones=EliminarSocios_negocio';
-
+//cambio del host por 34.68.196.220:90
 $(document).ready(function(){
     CargarSociosNegocio();
 });
