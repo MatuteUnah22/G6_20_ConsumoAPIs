@@ -9,8 +9,45 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/JS/Socios_Negocio.js"></script>
     <link rel="shortcut icon" href="#">
-</head>
+    <link rel="stylesheet" href="/CSS/Estilos.css">
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.unah.edu.hn/themes/portalunah/assets/images/logo-unah.png" alt="" width="110"
+                    height="55" class="d-inline-block align-text-centers"> Grupo 6_20</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link btn-outline-dark dropdown-toggle p-2" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Consumo de APIs REST
+                        </a>
+                        <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/Formularios/Articulos.html">Artículos</a></li>
+                            <li><a class="dropdown-item" href="/Formularios/Factura.html">Facturas</a></li>
+                            <li><a class="dropdown-item" href="/Formularios/Pedidos.html">Pedidos</a></li>
+                            <li><a class="dropdown-item" href="/Formularios/Socios_Negocio.html">Socios de
+                                    Negocio</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Acerca de la Empresa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 <div class="container">
     <div class="consulta mt-4">
         <div class="row">
@@ -21,7 +58,7 @@
         <div class="box-body">
             <div class="table table-responsive">
                 <table class="table table_hover">
-                    <thead>
+                    <thead class="Tablas">
                         <tr>
                             <th>ID</th>
                             <th>Nombre</th>
